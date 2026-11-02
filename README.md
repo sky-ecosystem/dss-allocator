@@ -158,3 +158,21 @@ An interface which each Conduit should implement.
 - DepositorUniV3 has limits for the maximum amount of a pair of tokens that can be added or removed from the pool per era. The rate is purposefully shared between the deposit and withdraw operations (so both actions share the same capacity).
 - The AllocatorDAO Proxy configuring the different rate limits is assumed to know what it is doing and is allowed to set any configuration, even if one configuration collides or duplicates others.
 - The Allocation System assumes that the ESM threshold is set large enough prior to its deployment, so Emergency Shutdown can never be called.
+
+## Audits
+
+Audit reports are hosted on the auditors' public portfolio pages:
+
+| Auditor | Report | Date |
+| --- | --- | --- |
+| ChainSecurity | [MakerDAO Allocator Deployment Scripts](https://www.chainsecurity.com/security-audit/makerdao-allocator-deployment-scripts/) | 2024-09-09 |
+| ChainSecurity | [MakerDAO DSS Allocator](https://www.chainsecurity.com/security-audit/makerdao-dss-allocator/) | 2024-09-09 |
+| Cantina | [dss-allocator](https://cantina.xyz/portfolio/ccf91a4a-d29b-40e7-b48e-2669edc06b7e) | 2023-10-09 |
+
+ChainSecurity reports are cumulative: each portfolio page hosts the latest version of the report, which covers all previously reviewed versions.
+
+### Other reports
+
+The following reports are not available on an auditor portfolio page and are kept in this repository:
+
+- [FPS (FPS_dss-allocator_Assessment_FINAL.pdf)](./audit/FPS_dss-allocator_Assessment_FINAL.pdf)
